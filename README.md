@@ -54,9 +54,11 @@ to co vy musite zmenit su iba tieto cesty
     - authorize: ~/.ssh/id_rsa.pub
 
 keys:
+
     - ~/.ssh/id_rsa
 
 folders:
+
     - map: ~/Documents/FEI/7semester/Timak/server 
 
 
