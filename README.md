@@ -5,9 +5,9 @@ Hejhou, takze takto. Kedze sa ten nas 3dremote printer bude vyvijat na WIN/MAC a
 1. Nainstalujte si najnovsiu Virtual Box, na ktorom sa vam vzdy, ked budete developovat, spusti tento nas linux, nijako to nespomaluje kompik, moj sa ani len nezahrial a uz ma nejaky ten rocik -> tahajte tu https://www.virtualbox.org/wiki/Downloads  toto sa instaluje klasicky ako programik a nebudete uz s tym nic riesit
 
 2. Cely proces spustenia a nainstalovania tohto Linuxu ulahcuje Vagrant, kde treba vediet iba 3 prikazy 
-- vagrant up - spustenie virtualky (prve trva dlhsie, lebo sa stiahne linux cca 300MB a nainstaluju sa dependencies - php, mysql, nginx server, node.js atd, 2., 3. n.ty krat to je otazka 15 sekund)
-- vagrant halt - zastavenie virtualky (po tom co ukoncite developenie toto mozte dat, to vm vypne a resources, ktore mala zaalokovane sa uvolnia)
-- vagrant destroy - znicenie virtualky (vymaze virtualku aj so subormi z virtual boxu, komplet majse)
+    - vagrant up - spustenie virtualky (prve trva dlhsie, lebo sa stiahne linux cca 300MB a nainstaluju sa dependencies - php, mysql, nginx server, node.js atd, 2., 3. n.ty krat to je otazka 15 sekund)
+    - vagrant halt - zastavenie virtualky (po tom co ukoncite developenie toto mozte dat, to vm vypne a resources, ktore mala zaalokovane sa uvolnia)
+    - vagrant destroy - znicenie virtualky (vymaze virtualku aj so subormi z virtual boxu, komplet majse)
 tu tahajte https://www.vagrantup.com/downloads.html
 toto sa instaluje tiez ako programik, ktory sa vcleni do comand linu/terminalu
 
