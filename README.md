@@ -53,14 +53,16 @@ to co vy musite zmenit su iba tieto cesty
 
     - authorize: ~/.ssh/id_rsa.pub
 
+```ruby
 keys:
 
     - ~/.ssh/id_rsa
-
+```
+```ruby
 folders:
 
     - map: ~/Documents/FEI/7semester/Timak/server 
-
+```
 
 **authorize a keys:**
 
@@ -69,18 +71,24 @@ Na tejto url je napisane ako ich vygenerovat v kroku 2,
 
 - https://help.github.com/articles/generating-ssh-keys#platform-mac
 
-hore si da prepnut platformu MAC/WINDOWS
+hore sa da prepnut platformu MAC/WINDOWS
 
-Generujete ich teda ak ich este nemate na MACu su vacsinou v zlozke ```~/.ssh/``` a hladate subor ```id_rsa.pub``` ```id_rsa``` (alebo rda alebo ina pripona) na WIN byvaju v ```c:/Users/username/.ssh/``` - ak sa tam teda nenachadzaju id_rsa.pub a id_rsa tak si ich vygenerujte a ich adresy zadajte do authorize (pub) a keys - Kubo hoblik to asi nemusi menit a Windowsaci zadajte adresu k tym vasim bez uvodzoviek teda napr ```c:/Users/Andre/.ssh/id_rsa.pub``` ```c:/Users/Andre/.ssh/id_rsa```
+Generujete ich teda ak ich este nemate na MACu su vacsinou v zlozke ```~/.ssh/``` a hladate subor ```id_rsa.pub``` ```id_rsa``` (alebo rda alebo ina pripona) na WIN byvaju v ```c:/Users/username/.ssh/``` - ak sa tam teda nenachadzaju id_rsa.pub a id_rsa tak si ich vygenerujte a ich adresy zadajte do authorize (pub) a keys v ```Homestead.yaml``` - Kubo hoblik to asi nemusi menit a Windowsaci zadajte adresu k tym vasim bez uvodzoviek teda napr to vase bude vyzerat 
 
-Potom zmente folders map: na adresu, kde budete chciet mat ulozeny tento nas timak. Bude to tak, ze si z gitu iba stiahnete priecinok Timak - ktory bude obsahovat client a server subory, tak idealne si to dajte, ze cestaKu/Timak/server
+```-authorize: c:/Users/Andre/.ssh/id_rsa.pub```
+```ruby
+keys:
+    -c:/Users/Andre/.ssh/id_rsa
+```
 
-Potomto sa dostante do suboru ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) a iba tam dajte command ```vagrant up```, to stiahne vsetko a spusti serveris. Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
+Potom zmente folders map: na adresu, kde budete chciet mat ulozeny tento nas timak (na to miesto potom mozete naklonovat tento repozitar prikazom ```git clone https://github.com/MichalGallovic/Timak.git Timak```. Cize ```cesta-ku/Timak/server```
 
-Ak si to chcete namapova na adresu, ktora je zadana v sites map: tak v subore MAC ```/etc/hosts```, WIN ```C:/Windows/System32/drivers/etc/hosts``` si pridajte riadok
+Potomt v subore ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) zadajte command ```vagrant up```, to stiahne vsetko a spusti serveris. Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
+
+Ak si to chcete namapova na adresu, ktora je zadana v sites map: tak v subore (MAC) ```/etc/hosts```, (WIN) ```C:/Windows/System32/drivers/etc/hosts``` si pridajte riadok
 ```127.0.0.1 3dremote.app```
 
-potom by to malo bezat na urlcke http://3dremote.app:8000
+potom by to malo bezat na urlcke ```http://3dremote.app:8000```
 
 Ak chcete dokoncit robotku dajte ```vagrant halt``` v priecinku ```homestead``` a server sa vypne
 
