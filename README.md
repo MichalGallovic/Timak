@@ -37,7 +37,7 @@ folders:
       #cesta k priecinku vo virtualke, co je viac menej nase PHPcko (laravel)
 
 #tu su pary, ze ked zadate urlcku 3dremote.app do prehliadaca,
-tak virtualka to nasmeruje na priecinok "to:"
+#tak virtualka to nasmeruje na priecinok "to:"
 sites:
     - map: 3dremote.app 
       to: /home/vagrant/server/public 
