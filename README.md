@@ -52,19 +52,29 @@ variables:
 
 ```
 
-to co vy musite zmenit su iba tieto cesty
-
-    - authorize: ~/.ssh/id_rsa.pub
+Ked som tento subor menil na WINdovse, tak to som si ho takto dal
 
 ```yaml
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+
+authorize: c:/Users/MG/.ssh/id_rsa.pub #zmena
+
 keys:
+    - c:/Users/MG/.ssh/id_rsa
 
-    - ~/.ssh/id_rsa
-```
-```yaml
 folders:
+    - map: c:/Users/MG/Desktop/FEI/7semester/Timak/server #zmena
+      to: /home/vagrant/server #zmena
 
-    - map: ~/Documents/FEI/7semester/Timak/server 
+sites:
+    - map: 3dremote.app #mozete menit
+      to: /home/vagrant/server/public #zmena
+
+variables:
+    - key: APP_ENV
+      value: local
 ```
 
 **authorize a keys:**
