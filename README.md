@@ -97,7 +97,7 @@ keys:
 
 Potom zmente folders map: na adresu, kde budete chciet mat ulozeny tento nas timak (na to miesto potom mozete rovno teraz - teda musite-  naklonovat tento repozitar prikazom ```git clone https://github.com/MichalGallovic/Timak.git Timak```. Cize ```cesta-ku/Timak/server```
 
-Potomt v subore ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) zadajte command ```vagrant up```, to stiahne vsetko a spusti serveris (na WINdowse vam mozu zacat vyskakovat take tie okna, ze povolte toto hento). Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
+Potomt v subore ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) zadajte command ```vagrant up```, to stiahne vsetko a spusti serveris (na WINdowse vam mozu zacat vyskakovat take tie okna, ze povolte toto hento). Ak vsetko prebehlo OK, tak by ste mali mat spusteny server. Aby sa vam zobrazila stranka, posledne co treba spravit je uz cisto laravelovska zalezitost. SSHnite sa do vagrantu zo zlozky homestead ```vagrant ssh```. Tu sa ```cd server``` a zadajte command ```composer install```. Tento command nainstaluje vsetky kniznice, na ktorych bezi laravel. Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
 
 Ak si to chcete namapova na adresu, ktora je zadana v sites map: tak v subore (MAC) ```/etc/hosts```, (WIN) ```C:/Windows/System32/drivers/etc/hosts``` si pridajte riadok
 ```127.0.0.1 3dremote.app```
