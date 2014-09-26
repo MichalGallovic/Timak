@@ -78,7 +78,7 @@ hore sa da prepnut platformu MAC/WINDOWS ( pri generovani sa vas to bude pytat n
 
 Generujete ich teda ak ich este nemate na MACu su vacsinou v zlozke ```~/.ssh/``` a hladate subor ```id_rsa.pub``` ```id_rsa``` (alebo rda alebo ina pripona) na WIN byvaju v ```c:/Users/username/.ssh/``` - ak sa tam teda nenachadzaju id_rsa.pub a id_rsa tak si ich vygenerujte a ich adresy zadajte do authorize (pub) a keys v ```Homestead.yaml``` - Kubo hoblik to asi nemusi menit a Windowsaci zadajte adresu k tym vasim bez uvodzoviek teda napr to vase bude vyzerat 
 
-```-authorize: c:/Users/Andre/.ssh/id_rsa.pub```
+```authorize: c:/Users/Andre/.ssh/id_rsa.pub```
 ```ruby
 keys:
     -c:/Users/Andre/.ssh/id_rsa
