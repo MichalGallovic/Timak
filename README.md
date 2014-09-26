@@ -1,6 +1,6 @@
 Timak
 =====
-Hejhou, takze takto. Kedze sa ten nas 3dremote printer bude vyvijat na WIN/MAC a bude to bezat nakoniec na LINUXE, existuje sposob, ako sa vyvarovat "system specific" errorom, ktore by vyskakovali iba na jednom z OS, nedali by sa zreprodukovat na ostatnych a teda ich odstranovanie by bolo problematicke. Pouziva sa na to virtualka, ktora presne odzrkadluje nastavenie servera, na ktorom tato appka nakoniec bude bezat. Je to Linux Ubuntu (14.04.1 64bit), viac menej uplne okresane na minimum bez GUI. Treba mat nato 2 veci nainstalovane a jednu skopcit, nic tazke.
+Hejhou, takze takto. Kedze sa ten nas 3dremote printer bude vyvijat na WIN/MAC a bude to bezat nakoniec na LINUXE, existuje sposob, ako sa vyvarovat "system specific" errorom, ktore by vyskakovali iba na jednom z OS, nedali by sa zreprodukovat na ostatnych a teda ich odstranovanie by bolo problematicke. Pouziva sa na to virtualka, ktora presne odzrkadluje nastavenie servera, na ktorom tato appka nakoniec bude bezat. Je to Linux Ubuntu (14.04.1 64bit), viac menej uplne okresane na minimum bez GUI. Treba mat nato 2 veci nainstalovane a a 2 git clony.
 
 0. (WIN ONLY) Windowsacky command prompt toto nema rad, tak je treba si stiahnut Git Bash, v ktorom sa daju zadavat linuxove prikazy na wine
     - Git Bash http://git-scm.com/downloads - vsetky prikazy budete spustat odtialto Windowsaci
@@ -16,6 +16,7 @@ toto sa instaluje tiez ako programik, ktory sa vcleni do comand linu/terminalu
 
 3. Posledna vec, ktoru treba nainstalovat je Laravel Homestead - ktory obsahuje vsetky potrebne nastavenia na developenie teda ten nginx, php, mysql node.js atd....Ten si naklonujte z githubu odtialto https://github.com/laravel/homestead.git
 Tento subor si v podstate mozete nakopcit kde chcete, idealne niekde do zlozky, v ktorej mate kodiky
+
 
 ###Vysvetlenie:
 
@@ -52,7 +53,7 @@ variables:
 
 ```
 
-Ked som tento subor menil na WINdovse, tak to som si ho takto dal
+Ked som tento subor menil na WINdovse, tak to som si ho takto dal - Kubo na MACu budes menit iba folders a sites oproti tomu defaultnemu Homestead.yaml
 
 ```yaml
 ip: "192.168.10.10"
@@ -94,9 +95,9 @@ keys:
     -c:/Users/Andre/.ssh/id_rsa
 ```
 
-Potom zmente folders map: na adresu, kde budete chciet mat ulozeny tento nas timak (na to miesto potom mozete naklonovat tento repozitar prikazom ```git clone https://github.com/MichalGallovic/Timak.git Timak```. Cize ```cesta-ku/Timak/server```
+Potom zmente folders map: na adresu, kde budete chciet mat ulozeny tento nas timak (na to miesto potom mozete rovno teraz - teda musite-  naklonovat tento repozitar prikazom ```git clone https://github.com/MichalGallovic/Timak.git Timak```. Cize ```cesta-ku/Timak/server```
 
-Potomt v subore ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) zadajte command ```vagrant up```, to stiahne vsetko a spusti serveris. Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
+Potomt v subore ```homestead``` (v ktorom ste teraz upravovali Homestead.yaml) zadajte command ```vagrant up```, to stiahne vsetko a spusti serveris (na WINdowse vam mozu zacat vyskakovat take tie okna, ze povolte toto hento). Ak vsetko prebehlo OK tak na adrese ```192.168.10.10``` by sa vam mala zobrazit stranka.
 
 Ak si to chcete namapova na adresu, ktora je zadana v sites map: tak v subore (MAC) ```/etc/hosts```, (WIN) ```C:/Windows/System32/drivers/etc/hosts``` si pridajte riadok
 ```127.0.0.1 3dremote.app```
@@ -107,3 +108,4 @@ Ak chcete dokoncit robotku dajte ```vagrant halt``` v priecinku ```homestead``` 
 
 Ak sa chcete ```ssh``` do virtualky tak staci v priecinku ```homestead``` dat ```vagrant ssh``` alebo od hocikial ```ssh vagrant@192.168.10.10```
 
+### Vsetky varant prikazy zadavajte z priecinky homestead
