@@ -21,7 +21,7 @@ Tento subor si v podstate mozete nakopcit kde chcete, idealne niekde do zlozky, 
 
 Funguje to teda asi takto, ten Homestead subor, co ste si stiahli z gitu, obsahuje recept ako vytvorit nasu virtualku so vsim vsudy - verzia Linuxu aku ma stiahnut, ake phpcko ake mysql atd. Nachadza sa tu subor Homestead.yaml - ten ked si otvorite vyzera takto
 
-```ruby
+```yaml
 ip: "192.168.10.10" 
 #ipecka, na ktorej bude appka dostupna, ked spustite virtualku
 memory: 2048
@@ -56,12 +56,12 @@ to co vy musite zmenit su iba tieto cesty
 
     - authorize: ~/.ssh/id_rsa.pub
 
-```ruby
+```yaml
 keys:
 
     - ~/.ssh/id_rsa
 ```
-```ruby
+```yaml
 folders:
 
     - map: ~/Documents/FEI/7semester/Timak/server 
