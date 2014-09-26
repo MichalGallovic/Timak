@@ -2,6 +2,9 @@ Timak
 =====
 Hejhou, takze takto. Kedze sa ten nas 3dremote printer bude vyvijat na WIN/MAC a bude to bezat nakoniec na LINUXE, existuje sposob, ako sa vyvarovat "system specific" errorom, ktore by vyskakovali iba na jednom z OS, nedali by sa zreprodukovat na ostatnych a teda ich odstranovanie by bolo problematicke. Pouziva sa na to virtualka, ktora presne odzrkadluje nastavenie servera, na ktorom tato appka nakoniec bude bezat. Je to Linux Ubuntu (14.04.1 64bit), viac menej uplne okresane na minimum bez GUI. Treba mat nato 2 veci nainstalovane a jednu skopcit, nic tazke.
 
+0.(WIN ONLY) Windowsacky command prompt toto nema rad, tak je treba si stiahnut Git Bash, v ktorom sa daju zadavat linuxove prikazy na wine
+    - Git Bash http://git-scm.com/downloads - vsetky prikazy budete spustat odtialto Windowsaci
+
 1. Nainstalujte si najnovsiu Virtual Box, na ktorom sa vam vzdy, ked budete developovat, spusti tento nas linux, nijako to nespomaluje kompik, moj sa ani len nezahrial a uz ma nejaky ten rocik -> tahajte tu https://www.virtualbox.org/wiki/Downloads  toto sa instaluje klasicky ako programik a nebudete uz s tym nic riesit
 
 2. Cely proces spustenia a nainstalovania tohto Linuxu ulahcuje Vagrant, kde treba vediet iba 3 prikazy 
