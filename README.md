@@ -108,4 +108,4 @@ Ak chcete dokoncit robotku dajte ```vagrant halt``` v priecinku ```homestead``` 
 
 Ak sa chcete ```ssh``` do virtualky tak staci v priecinku ```homestead``` dat ```vagrant ssh``` alebo od hocikial ```ssh vagrant@192.168.10.10```
 
-### Vsetky varant prikazy zadavajte z priecinky homestead
+#### Vsetky vagrant prikazy zadavajte z priecinka ```homestead```
