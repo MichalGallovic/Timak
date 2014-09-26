@@ -74,7 +74,7 @@ Na tejto url je napisane ako ich vygenerovat v kroku 2,
 
 - https://help.github.com/articles/generating-ssh-keys#platform-mac
 
-hore sa da prepnut platformu MAC/WINDOWS
+hore sa da prepnut platformu MAC/WINDOWS ( pri generovani sa vas to bude pytat na passphrase - tu si dakde zapiste, keby v buducnosti to od vas kompik pyta pri prihlasovani cez ssh alebo tak)
 
 Generujete ich teda ak ich este nemate na MACu su vacsinou v zlozke ```~/.ssh/``` a hladate subor ```id_rsa.pub``` ```id_rsa``` (alebo rda alebo ina pripona) na WIN byvaju v ```c:/Users/username/.ssh/``` - ak sa tam teda nenachadzaju id_rsa.pub a id_rsa tak si ich vygenerujte a ich adresy zadajte do authorize (pub) a keys v ```Homestead.yaml``` - Kubo hoblik to asi nemusi menit a Windowsaci zadajte adresu k tym vasim bez uvodzoviek teda napr to vase bude vyzerat 
 
