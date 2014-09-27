@@ -14,7 +14,7 @@ Hejhou, takze takto. Kedze sa ten nas 3dremote printer bude vyvijat na WIN/MAC a
 tu tahajte https://www.vagrantup.com/downloads.html
 toto sa instaluje tiez ako programik, ktory sa vcleni do comand linu/terminalu
 
-3. Posledna vec, ktoru treba nainstalovat je Laravel Homestead - ktory obsahuje vsetky potrebne nastavenia na developenie teda ten nginx, php, mysql node.js atd....Ten si naklonujte z githubu odtialto https://github.com/laravel/homestead.git
+3. Posledna vec, ktoru treba nainstalovat je Laravel Homestead - ktory obsahuje vsetky potrebne nastavenia na developenie teda ten nginx, php, mysql node.js atd....Ten si naklonujte z githubu odtialto https://github.com/laravel/homestead.git (prikaz spustate z git bashu ```git clone https://github.com/laravel/homestead.git Timak```)
 Tento subor si v podstate mozete nakopcit kde chcete, idealne niekde do zlozky, v ktorej mate kodiky
 
 
