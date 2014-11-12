@@ -12,7 +12,7 @@
 */
 
 
-Route::group(['domain' => '3dtlac.ostrovfestival.dev'], function() {
+Route::group(['domain' => '3dtlac.ostrovfestival.sk'], function() {
 
     Route::group(['before' => 'auth.custom'], function() {
         Route::get('/admin',['as' => 'admin', 'uses' =>'AdminController@index']);
