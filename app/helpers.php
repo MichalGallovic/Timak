@@ -13,7 +13,9 @@ function dotdotdot($string) {
 }
 
 function localizedDate($date) {
-    return strftime('%e. %B %Y', strtotime($date->formatLocalized('%A %d %B %Y')));
+	//@TODO this did not work
+    // return strftime('%e. %B %Y', strtotime($date->formatLocalized('%A %d %B %Y')));
+    return $date->toFormattedDateString();
 }
 
 function currentUserFullname() {

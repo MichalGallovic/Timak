@@ -11,8 +11,16 @@
 |
 */
 
+$domain = "";
 
-Route::group(['domain' => '3dtlac.ostrovfestival.sk'], function() {
+if(App::environment('local')) {
+    $domain = "3dtlac.ostrovfestival.dev";
+} else {
+    $domain = "3dtlac.ostrovfestival.sk";
+}
+
+
+Route::group(['domain' => $domain], function() {
 
     Route::group(['before' => 'auth.custom'], function() {
         Route::get('admin',['as' => 'admin', 'uses' =>'AdminController@index']);

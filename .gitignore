@@ -1,5 +1,10 @@
-/bootstrap/compiled.php
+bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
 .env.*.php
 .env.php
-/homestead
-/.vagrant
+.DS_Store
+Thumbs.db
+
+/public/assets/img
