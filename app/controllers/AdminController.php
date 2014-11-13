@@ -12,7 +12,7 @@ class AdminController extends Controller {
 	 */
 	public function index()
 	{
-        $news = News::all()->sortByDesc('created_at')
+        $news = News::all()->sortByDesc('created_at');
         return View::make('admin.index')->with('news', $news);
 	}
 
