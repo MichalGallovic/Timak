@@ -16,7 +16,7 @@ $domain = "";
 if(App::environment('local')) {
     $domain = "3dtlac.ostrovfestival.dev";
 } else {
-    $domain = "3dtlac.ostrovfestival.sk";
+    $domain = "timak.makeit3d.rocks";
 }
 
 
@@ -51,9 +51,4 @@ Route::group(['domain' => $domain], function() {
     Route::get('news/{id}',['as' => 'news.detail', 'uses' => 'NewsController@show']);
 
 
-});
-
-
-Route::get('/', function(){
-    return View::make('ostrovfestival.index');
 });
